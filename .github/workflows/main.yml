@@ -10,5 +10,7 @@ jobs:
             - uses: actions/checkout@v1
             - name: Show environment variables
               shell: bash
-              run: env
+              run: |
+                  env
+                  cat $GITHUB_EVENT_PATH
 
