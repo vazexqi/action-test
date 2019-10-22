@@ -1,0 +1,17 @@
+name: Project Actions
+
+on:
+  project_card:
+    types: [opened, moved]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v1
+            - name: Show environment variables
+              shell: bash
+              run: |
+                  cat $GITHUB_EVENT_PATH
+

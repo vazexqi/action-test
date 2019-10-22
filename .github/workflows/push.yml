@@ -1,4 +1,4 @@
-name: SFDX Actions
+name: SFDX Push Action
 
 on: [push]
 
